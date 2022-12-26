@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="sm8cA0N8"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0&appId=489044941955870&autoLogAppEvents=1" nonce="OcjW9Q0e">
+</script>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="{{url_for('static', filename='assets/images/work001-01.jpg')}}" class="img-responsive" alt="">
+
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">{{post.title}}</h1>
+          </div>
+          {{post.content}}
+
+        </div>
+      </div>
+
+      
+      
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+              {% set fname = 'assets/images/'+  post.bgimage  %}
+            <img src="{{url_for('static', filename=fname)}}" class="img-responsive" alt="">
+            <p>Subhojit Mondal</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="fb-like" 
+       data-href="https://www.your-domain.com/your-page.html" 
+       data-width=""
+       data-layout="standard" 
+       data-action="like" 
+       data-size="small"  
+       data-share="true">
+      </div>
+      <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width=""     data-numposts="5">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,19 @@
+{
+    "params": 
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/codingbaba",
+        "prod_uri":"mysql://root:@localhost/codingbaba",
+        "fb_url":"https://facebook.com/Subhojit.sparks",
+        "tw_url":"https://twitter.com/subhojit110",
+        "git_url":"https://github.com/Subhojitsparks/portfolio",
+        "blog_title":"The Coding Baba",
+        "no_of_posts": 3,
+        "login_image":"logo.png",
+        "admin_user":"subhojit110",
+        "admin_password": "8820",
+        "upload_location":"C://Users//subho//Desktop//webserv//static//assets//images",
+        "lk_url":"https://www.linkedin.com/in/subhojit-mondal-5b410a58"
+
+    }
+}

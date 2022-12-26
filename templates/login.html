@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Add your site or app content here -->
+  
+
+
+  
+  <body class="text-center">
+     <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">05 : Admin LogIn </h1>
+          </div>
+    
+<main class="form-signin w-100 m-auto" style="
+    margin: auto;
+    width: 50%;
+    border: 2px solid #121312;
+    padding: 10px;
+">
+  <form class="form-signin" action="/dashboard" method="post">
+    {% set fname = 'assets/images/'+  params['login_image']  %}
+    <img class="mb-4" src="{{url_for('static', filename=fname)}}" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" name="uname" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" name="upass" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <!----<div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>---->
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy;2022</p>
+  </form>
+</main>
+
+
+    </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
+
+{% endblock %}
+</html>
